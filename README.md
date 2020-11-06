@@ -13,6 +13,10 @@ This script will help you just to dynamically add targets to Prometheus based on
 Ubuntu:
 $ sudo apt install awscli
 
+5- the --web.enable-lifecycle command line flag must be passed for HTTP reloading to work. 
+usually we add it on the systemd service "/etc/systemd/system/prometheus.service"
+$ systemctl daemon-reload && systemctl restart prometheus.service
+
 5- Clone the repo:
 $ git clone https://github.com/MajdJamaah/aws-prometheus-service-discovery.git
 
