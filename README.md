@@ -16,6 +16,9 @@ $ sudo apt install awscli
 5- Clone the repo:
 $ git clone https://github.com/MajdJamaah/aws-prometheus-service-discovery.git
 
+7- Make the script executable
+$ chmod +x servicediscovery.sh
+
 6- Run the script
 $ ./servicediscovery.sh {Region} {prometheus-configfile}
 
