@@ -25,4 +25,4 @@ $ ./servicediscovery.sh {Region} {prometheus-configfile}
 example: ./servicediscovery.sh eu-west-1 /etc/prometheus/prometheus.yml
 
 7- Make it every 5 mins cron "crontab -e"
-$ */5 * * * * /root/servicediscovery.sh eu-west-1 /etc/prometheus/prometheus.yml
+$ */5 * * * * /root/aws-prometheus-service-discovery/servicediscovery.sh eu-west-1 /etc/prometheus/prometheus.yml
