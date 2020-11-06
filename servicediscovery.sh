@@ -12,4 +12,4 @@ targets=`cat instances_ips_final`
 
 sed -i "29s/.*/$targets/" $2
 
-systemctl restart prometheus.service
+curl -X POST http://localhost:9090/-/reload
